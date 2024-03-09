@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "unique-unicode-runes"
+version = "0.1.0"
+description = "Stdout unique runes passed into stdin"
+authors = ["Till Max Schwikal <8588522+buttairfly@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "unique_unicode_runes"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.scripts]
+unique_unicode_runes = "unique_unicode_runes.main:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
